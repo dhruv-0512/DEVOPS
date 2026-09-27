@@ -22,7 +22,7 @@ minikube status
 kubectl cluster-info
 ```
 
-Minikube pulled the base control-plane images, created the cluster with 4 CPUs and 4096 MB of RAM, and initialized Kubernetes v1.35.1 with the CNI configured. The status check confirmed the control plane, kubelet, and apiserver were all running, and `kubectl cluster-info` showed the cluster reachable at its local HTTPS endpoint (e.g. `https://127.0.0.1:53240`).
+Minikube pulled the base control-plane images, created the cluster with 4 CPUs and 4096 MB of RAM, and initialized Kubernetes v1.35.1 with the CNI configured. The status check confirmed the control plane, kubelet, and apiserver were all running, and `kubectl cluster-info` showed the cluster reachable at its local HTTPS endpoint (e.g. `https://127.0.0.1:63211`).
 
 ![Minikube Start and Status](screenshots/image.png)
 
