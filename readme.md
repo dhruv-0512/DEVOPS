@@ -57,7 +57,7 @@ Each exercise has its own README and supporting files. Screenshots are stored in
 | 9 | [Jenkins Multi-Stage Pipeline](./Exercise-9/) | Automated multi-stage CI/CD pipeline | Completed |
 | 10 | [Multi-Node, Multi-App Minikube Deployment](./Exercise-10/) | Multi-node Kubernetes cluster and multiple applications | Completed |
 
-**Summary:** 10 of 10 exercises completed.
+**Summary:** All 10 of 10 exercises completed.
 
 ## How to Use This Repository
 
