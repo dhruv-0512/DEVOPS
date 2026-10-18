@@ -16,7 +16,7 @@ Run Jenkins in a Docker container, connect it to a GitHub repository containing 
 
 The script used in this exercise is stored in a separate GitHub repository:
 
-[https://github.com/dhruv-0512/devops-sample-code](https://github.com/lakshyaaa76/devops-sample-code)
+[https://github.com/dhruv-0512/devops-sample-code](https://github.com/dhruv-0512/devops-sample-code)
 
 It contains a single file, `hello-world.sh`:
 
