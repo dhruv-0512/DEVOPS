@@ -27,11 +27,6 @@ All exercises are maintained directly in the root directory of the repository. E
 ```text
 DEVOPS/
 ├── Exercise-1/
-│   ├── README.md
-│   └── screenshots/
-│       ├── first.png
-│       ├── second.png
-│       └── ...
 ├── Exercise-2/
 ├── Exercise-3/
 ├── Exercise-4/
@@ -45,7 +40,7 @@ DEVOPS/
 └── readme.md
 ```
 
-Each exercise folder contains a `screenshots/` directory with images named `first.png`, `second.png`, `third.png`, and so on. The screenshots are named in the order in which they appear in that exercise's README, making it easy to follow the implementation steps and match the documentation with the corresponding visual evidence.
+Each exercise has its own README and supporting files. Screenshots are stored in the corresponding screenshot directory and named sequentially (`first.png`, `second.png`, `third.png`, and so on) in the order they appear in that exercise's README. Existing capitalization exceptions are preserved: Exercises 4, 5, and 6 use `Screenshots/`, while Exercise 1 keeps its two legacy images at the exercise root.
 
 ## Exercises and Progress
 
@@ -76,7 +71,7 @@ Each exercise folder contains a `screenshots/` directory with images named `firs
 
 The documentation focuses on my completed implementations rather than reproducing the original lab instructions. Each exercise includes relevant implementation details, verification steps, and screenshots to demonstrate the results.
 
-Screenshots are stored in the corresponding exercise's `screenshots/` directory and named sequentially according to their order in the README.
+Screenshots are stored in the corresponding exercise's screenshot directory and named sequentially according to their order in the README. See the capitalization and Exercise 1 exceptions described above.
 
 ## Technologies
 
