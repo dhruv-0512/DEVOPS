@@ -141,7 +141,7 @@ Feedback (Success / Failure)
 ## 11. Commands Used
 
 ```powershell
-cd .\Exercises\7-Jenkins-CI-Automation
+cd .\Exercise-7
 
 docker run -d --name jenkins -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
 
