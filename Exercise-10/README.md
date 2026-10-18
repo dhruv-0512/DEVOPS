@@ -301,7 +301,7 @@ minikube -p devops-multinode node start devops-multinode-m02
 
 A 3-node Minikube cluster was created and two Flask applications were deployed on it: the Product Catalog with 2 replicas and the Shopping Cart with 3 replicas.
 
-The pod anti-affinity rules placed every replica of an application on a different node. Both services were exposed with NodePort Services and tested successfully using `curl` and `Invoke-RestMethod`. Stopping a worker node showed that the remaining nodes continue to host running pods, demonstrating the high availability that a multi-node setup provides.
+The pod anti-affinity rules placed every replica of an application on a different node. Both services were exposed with NodePort Services and tested successfully using the `curl` and `Invoke-RestMethod`. Stopping a worker node showed that the remaining nodes continue to host running pods, demonstrating the high availability that a multi-node setup provides.
 
 ## 14. Notes
 
