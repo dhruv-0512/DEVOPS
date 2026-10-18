@@ -187,6 +187,8 @@ Forwarding from 127.0.0.1:8080 -> 80
 Handling connection for 8080
 ```
 
+The screenshot below is historical evidence from the same commands, but its terminal prompt contains the former working-directory path. It is retained unchanged so the repository does not fabricate a new result. To regenerate current evidence, run the commands above from the current `Exercise-3` directory and replace the image only with the resulting genuine output.
+
 ![Pod Details and Port Forwarding](screenshots/fifth.png)
 
 ## 7. Accessing the /buy Endpoint
@@ -223,7 +225,7 @@ Invoke-RestMethod http://localhost:8080/buy
 }
 ```
 
-![Localhost Buy Endpoint - Smartphone](screenshots/seventh.png)
+![Localhost Buy Endpoint - Smartphone](screenshots/seven.png)
 
 Each response returns a randomly selected item and the hostname of the Pod that served the request, confirming the Service is routing traffic across the ReplicaSet's Pods.
 
