@@ -253,7 +253,7 @@ Results:
 
 This confirms the Flask container can reach both services by name, with no hard-coded IP addresses.
 
-![Ping Connectivity Test](Screenshots/eigth.png)
+![Ping Connectivity Test](Screenshots/eighth.png)
 
 ## 10. Docker Networking Working
 
