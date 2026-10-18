@@ -2,7 +2,7 @@
 
 This repository contains my implementations and documentation for the **DevOps Lab exercises** completed as part of my coursework.
 
-The exercises cover different DevOps, containerization, orchestration, CI/CD, cloud, and related concepts. Each exercise is documented separately with the commands, configurations, implementation details, verification steps, and evidence of completion wherever applicable.
+The exercises cover Kubernetes and Minikube, Docker networking and security, monitoring with Grafana, and CI/CD with Jenkins. Each exercise is documented separately with the commands, configurations, implementation details, verification steps, and screenshots of successful execution.
 
 ## Repository Purpose
 
@@ -10,77 +10,85 @@ The purpose of this repository is to maintain a record of the practical work com
 
 For each exercise, I document:
 
-* The objective of the exercise
-* Tools and technologies used
-* Commands or configurations implemented
-* Important implementation steps
-* Verification of the expected result
-* Screenshots/evidence of successful execution
-* Final outcome
+- The objective of the exercise
+- Tools and technologies used
+- Commands or configurations implemented
+- Important implementation steps
+- Verification of the expected result
+- Screenshots and evidence of execution
+- Final outcome
 
-The repository is intended to serve as both a **record of completed coursework** and a reference for the concepts and tools used during the lab.
+The repository serves as both a **record of completed coursework** and a reference for the concepts and tools used during the lab.
 
-## Exercises
+## Project Structure
 
-All exercises are maintained inside the [`Exercises`](./Exercises) directory.
-
-Each exercise has its own folder containing the relevant documentation and implementation artifacts.
+All exercises are maintained directly in the root directory of the repository. Each exercise has its own folder containing its README, implementation files, configurations, and screenshots where applicable.
 
 ```text
-Exercises/
+DEVOPS/
 ├── Exercise-1/
+│   ├── README.md
+│   └── screenshots/
+│       ├── first.png
+│       ├── second.png
+│       └── ...
 ├── Exercise-2/
 ├── Exercise-3/
-├── ...
-└── Exercise-N/
+├── Exercise-4/
+├── Exercise-5/
+├── Exercise-6/
+├── Exercise-7/
+├── Exercise-8/
+├── Exercise-9/
+├── Exercise-10/
+├── .gitignore
+└── readme.md
 ```
 
-The individual exercise folders contain the detailed documentation and evidence for the corresponding exercise.
+Each exercise folder contains a `screenshots/` directory with images named `first.png`, `second.png`, `third.png`, and so on. The screenshots are named in the order in which they appear in that exercise's README, making it easy to follow the implementation steps and match the documentation with the corresponding visual evidence.
+
+## Exercises and Progress
+
+| # | Exercise | Focus Area | Status |
+|---|---|---|---|
+| 1 | [Kubernetes Getting Started](./Exercise-1/) | Kubernetes fundamentals | Completed |
+| 2 | [Minikube, kubectl and Flask](./Exercise-2/) | Deploying a Flask application using Minikube and kubectl | Completed |
+| 3 | [Scaling a Flask App with ReplicaSets](./Exercise-3/) | ReplicaSets and application scaling | Completed |
+| 4 | [Docker Networking](./Exercise-4/) | Docker networking and container communication | Completed |
+| 5 | [Docker Security with AppArmor](./Exercise-5/) | Flask, custom AppArmor profiles and Docker security | Completed |
+| 6 | [Grafana Real-time Monitoring](./Exercise-6/) | Application monitoring and Grafana dashboards | Completed |
+| 7 | [Jenkins CI Automation](./Exercise-7/) | Jenkins running in Docker and CI automation | Completed |
+| 8 | [Jenkins Hello World Job](./Exercise-8/) | GitHub integration and Freestyle jobs | Completed |
+| 9 | [Jenkins Multi-Stage Pipeline](./Exercise-9/) | Automated multi-stage CI/CD pipeline | Completed |
+| 10 | [Multi-Node, Multi-App Minikube Deployment](./Exercise-10/) | Multi-node Kubernetes cluster and multiple applications | Completed |
+
+**Summary:** 10 of 10 exercises completed.
 
 ## How to Use This Repository
 
-Start with the `Exercises` folder to navigate through the completed lab exercises.
-
-For a particular exercise:
-
-1. Open its folder inside `Exercises`.
-2. Read the exercise `README.md` for the objective and implementation details.
-3. Review the commands/configuration used.
-4. Check the verification steps and results.
-5. Refer to the screenshots or other artifacts included with the exercise where applicable.
+1. Open the relevant `Exercise-*` folder.
+2. Read its `README.md` for the objective and implementation details.
+3. Review the commands, configurations, and source files.
+4. Follow the screenshots in the order they are referenced in the README. The filenames (`first.png`, `second.png`, `third.png`, and so on) correspond to their order of appearance.
+5. Check the verification steps and execution results.
 
 ## Documentation Approach
 
-The documentation in this repository focuses on **my completed implementation** rather than reproducing the original lab instructions.
+The documentation focuses on my completed implementations rather than reproducing the original lab instructions. Each exercise includes relevant implementation details, verification steps, and screenshots to demonstrate the results.
 
-Where an exercise requires practical execution, screenshots and other relevant artifacts are included to demonstrate the result.
-
-## Progress
-
-| Exercise   | Status    |
-| ---------- | --------- |
-| Exercise 1 | Completed |
-| Exercise 2 | Completed |
-| Exercise 3 | Completed |
-| ...        | ...       |
-
-This table will be updated as additional exercises are completed.
+Screenshots are stored in the corresponding exercise's `screenshots/` directory and named sequentially according to their order in the README.
 
 ## Technologies
 
-The technologies and tools used vary between exercises and may include:
+- **Containerization and Security:** Docker, Docker Networking, AppArmor
+- **Programming:** Python, Flask, Docker SDK for Python
+- **Orchestration:** Kubernetes, Minikube, kubectl
+- **Monitoring:** Grafana, Prometheus
+- **CI/CD:** Jenkins, Freestyle jobs, multi-stage pipelines
+- **Version Control:** Git and GitHub
 
-* Linux
-* Docker
-* Kubernetes
-* Minikube
-* kubectl
-* Git & GitHub
-* CI/CD tools
-* Cloud and DevOps tools
-
-The specific technologies used for each exercise are documented in its respective folder.
+The specific technologies and implementation details for each exercise are documented in its respective folder.
 
 ## Note
 
-This repository is maintained as part of my **DevOps Lab coursework**. The `Exercises` directory contains the individual practical exercises, while this README provides the overall context and navigation for the repository.
+This repository is maintained as part of my **DevOps Lab coursework**. Each `Exercise-*` directory contains an individual practical exercise, while this README provides an overview of the repository, progress tracking, and navigation to the completed work.
