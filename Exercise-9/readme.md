@@ -40,7 +40,7 @@ docker exec jenkins python3 --version
 
 ## 3. Create the Application
 
-The application files live in `Exercises/9-Jenkins-Multi-Stage-Pipeline`:
+The application files live in `Exercises/Exercise-9`:
 
 * `app.py` – a Flask app that returns `Hello, Jenkins Multi-Stage Pipeline!` on `/`
 * `requirements.txt` – pins `flask==2.1.2`
@@ -74,7 +74,7 @@ git push
 2. Under **Pipeline**, set **Definition** to *Pipeline script from SCM*.
 3. Set **SCM** to *Git* and enter the repository URL.
 4. Set **Branch Specifier** to `*/main`.
-5. Set **Script Path** to `Exercises/9-Jenkins-Multi-Stage-Pipeline/Jenkinsfile`.
+5. Set **Script Path** to `Exercises/Exercise-9/Jenkinsfile`.
 6. Click **Save**.
 
 ## 7. Run the Pipeline
@@ -96,7 +96,7 @@ The pipeline executed all stages successfully:
 List the deployed files inside the Jenkins workspace:
 
 ```powershell
-docker exec jenkins ls /var/jenkins_home/workspace/Python-Multistage-Pipeline/Exercises/9-Jenkins-Multi-Stage-Pipeline/python-app-deploy
+docker exec jenkins ls /var/jenkins_home/workspace/Python-Multistage-Pipeline/Exercises/Exercise-9/python-app-deploy
 ```
 
 Output:
@@ -154,7 +154,7 @@ git add .
 git commit -m "Add Jenkins multi-stage pipeline exercise"
 git push
 
-docker exec jenkins ls /var/jenkins_home/workspace/Python-Multistage-Pipeline/Exercises/9-Jenkins-Multi-Stage-Pipeline/python-app-deploy
+docker exec jenkins ls /var/jenkins_home/workspace/Python-Multistage-Pipeline/Exercises/Exercise-9/python-app-deploy
 ```
 
 ## 11. Result
