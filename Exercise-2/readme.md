@@ -24,7 +24,7 @@ kubectl cluster-info
 
 Minikube pulled the base control-plane images, created the cluster with 4 CPUs and 4096 MB of RAM, and initialized Kubernetes v1.35.1 with the CNI configured. The status check confirmed the control plane, kubelet, and apiserver were all running, and `kubectl cluster-info` showed the cluster reachable at its local HTTPS endpoint (e.g. `https://127.0.0.1:63211`).
 
-![Minikube Start and Status](screenshots/image.png)
+![Minikube Start and Status](screenshots/first.png)
 
 ## 2. Create the Flask Application
 
@@ -76,7 +76,7 @@ docker build -t flask-app .
 
 Docker executed the build steps in order — loading the Dockerfile, copying the application files, and installing Flask on top of the `python:3.8-slim` base image. The build completed successfully, producing the image `flask-app:latest` at roughly 136 MB.
 
-![Docker Build Flask Image](screenshots/image2.png)
+![Docker Build Flask Image](screenshots/second.png)
 
 ## 6. Create the Kubernetes Deployment and Service YAML
 
@@ -144,7 +144,7 @@ kubectl get services
 * **Pod:** `flask-app-6d58f88547-94z8k` → `Running`.
 * **Service:** `flask-app-service` → type `NodePort`, mapping `15000:31331/TCP`.
 
-![Deployment and Service Status](screenshots/image3.png)
+![Deployment and Service Status](screenshots/third.png)
 
 ## 8. Access the Application
 
@@ -163,7 +163,7 @@ http://127.0.0.1:50615
 
 This command must be left running in its own terminal — the tunnel stays alive only as long as the process is active.
 
-![Minikube Service URL](screenshots/image4.png)
+![Minikube Service URL](screenshots/fourth.png)
 
 In a **separate** terminal, the app was reached using the tunneled URL:
 
@@ -179,7 +179,7 @@ Hello from Flask on Kubernetes!
 
 The Flask application responded successfully, confirming the full request path worked end-to-end: **host → Minikube tunnel → NodePort Service → Pod → Flask container**.
 
-![Curl Response from Flask App](screenshots/image5.png)
+![Curl Response from Flask App](screenshots/fifth.png)
 
 ## 9. Kubernetes Working (Request Flow)
 

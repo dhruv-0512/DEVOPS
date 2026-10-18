@@ -34,7 +34,7 @@ NAME       STATUS   ROLES           AGE   VERSION
 minikube   Ready    control-plane   1m    v1.35.1
 ```
 
-![Minikube Setup](screenshots/image.png)
+![Minikube Setup](screenshots/first.png)
 
 ## 2. Point Docker at Minikube's Docker Daemon
 
@@ -54,7 +54,7 @@ registry.k8s.io/kube-apiserver:v1.35.1       6f9eeb0cff98   98.8MB
 ...
 ```
 
-![Docker Images in Minikube](screenshots/image2.png)
+![Docker Images in Minikube](screenshots/second.png)
 
 ## 3. Build the Flask App Image
 
@@ -71,7 +71,7 @@ The build completed successfully and the image was confirmed present in Minikube
 flashsale:1.0   ea151d319009   143MB
 ```
 
-![Flask App Docker Build](screenshots/image3.png)
+![Flask App Docker Build](screenshots/third.png)
 
 ## 4. Create and Apply the ReplicaSet
 
@@ -169,7 +169,7 @@ flashsale-rs-z8qzk   Running
 
 After deleting `flashsale-rs-6tm6x`, Kubernetes automatically created a replacement Pod to maintain the desired replica count of 5 — demonstrating the ReplicaSet controller's continuous reconciliation between desired and actual state.
 
-![ReplicaSet Scaling and Pod Management](screenshots/image4.png)
+![ReplicaSet Scaling and Pod Management](screenshots/fourth.png)
 
 ## 6. Pod Distribution and Port Forwarding
 
@@ -187,7 +187,7 @@ Forwarding from 127.0.0.1:8080 -> 80
 Handling connection for 8080
 ```
 
-![Pod Details and Port Forwarding](screenshots/image5.png)
+![Pod Details and Port Forwarding](screenshots/fifth.png)
 
 ## 7. Accessing the /buy Endpoint
 
@@ -209,7 +209,7 @@ Invoke-RestMethod http://localhost:8080/buy
 }
 ```
 
-![Localhost Buy Endpoint - Shoes](screenshots/image6.png)
+![Localhost Buy Endpoint - Shoes](screenshots/sixth.png)
 
 **Request 2 — served by `flashsale-rs-t2kzc`:**
 
@@ -223,7 +223,7 @@ Invoke-RestMethod http://localhost:8080/buy
 }
 ```
 
-![Localhost Buy Endpoint - Smartphone](screenshots/image7.png)
+![Localhost Buy Endpoint - Smartphone](screenshots/seventh.png)
 
 Each response returns a randomly selected item and the hostname of the Pod that served the request, confirming the Service is routing traffic across the ReplicaSet's Pods.
 
