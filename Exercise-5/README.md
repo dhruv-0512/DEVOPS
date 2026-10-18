@@ -29,7 +29,7 @@ my-apparmor-profile
 test_restricted_actions.py
 ```
 
-![Project Files](screenshots/first.png)
+![Project Files](Screenshots/first.png)
 
 ## 2. AppArmor Profile
 
@@ -56,11 +56,11 @@ wsl -u root bash -c "docker build -t flask-apparmor ."
 
 The profile was copied to `/etc/apparmor.d/` and loaded, and `aa-status` listed `my-apparmor-profile`. The image `flask-apparmor` was built from `python:3.8-slim` with Flask installed.
 
-![Load Profile and Build Image](screenshots/second.png)
+![Load Profile and Build Image](Screenshots/second.png)
 
 The final build steps exposed port 5000 and set the container command to `python app.py`:
 
-![Final Docker Build Steps](screenshots/third.png)
+![Final Docker Build Steps](Screenshots/third.png)
 
 ## 4. Run the Container with the Profile
 
@@ -79,7 +79,7 @@ Hello, this is a secure Flask application running inside a Docker container!
 
 and `docker inspect` reported the profile `my-apparmor-profile`.
 
-![Run Secure Flask Container](screenshots/fourth.png)
+![Run Secure Flask Container](Screenshots/fourth.png)
 
 ## 5. Apply the Profile and Test Restrictions with the Docker SDK
 
@@ -95,7 +95,7 @@ wsl -u root python3 test_restricted_actions.py
 | `cat /etc/passwd` | Blocked | Succeeded, user entries were printed |
 | `/bin/bash` | Blocked | Exit code 0 |
 
-![SDK Apply and Test Restrictions](screenshots/fifth.png)
+![SDK Apply and Test Restrictions](Screenshots/fifth.png)
 
 ## 6. Observations and Limitations
 
