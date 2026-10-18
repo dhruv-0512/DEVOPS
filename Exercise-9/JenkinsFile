@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        APP_DIR = 'Exercises/9-Jenkins-Multi-Stage-Pipeline'
+        APP_DIR = 'Exercise-9'
     }
 
     stages {
