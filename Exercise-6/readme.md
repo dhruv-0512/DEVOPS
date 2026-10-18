@@ -155,9 +155,9 @@ The Docker socket is mounted and the Docker CLI is installed so Jenkins can run 
 Pipeline job settings:
 
 * Definition: **Pipeline script from SCM**, SCM: **Git**
-* Repository URL: `https://github.com/lakshyaaa76/DEVOPS.git`
+* Repository URL: `https://github.com/dhruv-0512/DEVOPS.git`
 * Branch: `*/main`
-* Script Path: `Exercises/6-Grafana-Realtime-Monitoring-of-Quick-Commerce-App/Jenkinsfile`
+* Script Path: `Exercises/Exercise-6/Jenkinsfile`
 
 ### Build Failure and Fix
 
