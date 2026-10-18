@@ -157,7 +157,7 @@ Pipeline job settings:
 * Definition: **Pipeline script from SCM**, SCM: **Git**
 * Repository URL: `https://github.com/dhruv-0512/DEVOPS.git`
 * Branch: `*/main`
-* Script Path: `Exercises/Exercise-6/Jenkinsfile`
+* Script Path: `Exercise-6/JenkinsFile`
 
 ### Build Failure and Fix
 
@@ -166,7 +166,7 @@ The first build failed with `failed to read dockerfile: open Dockerfile: no such
 ```groovy
 stage('Build Docker Image') {
     steps {
-        dir('Exercises/6-Grafana-Realtime-Monitoring-of-Quick-Commerce-App') {
+        dir('Exercise-6') {
             sh 'docker build -t delivery_metrics .'
         }
     }

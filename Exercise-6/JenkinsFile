@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                dir('Exercises/6-Grafana-Realtime-Monitoring-of-Quick-Commerce-App') {
+                dir('Exercise-6') {
                     sh 'docker build -t delivery_metrics .'
                 }
             }
